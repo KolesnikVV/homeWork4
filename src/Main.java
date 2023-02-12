@@ -4,6 +4,9 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+        task6();
+        task7();
     }
     public static void task1 (){
         System.out.println("Задание 1");
@@ -60,6 +63,51 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + threeDay + " штук бутылок");
         int oneMounth = oneDay * 30;
         System.out.println("За 1 месяц машина произвела " + oneMounth + " штук бутылок");
+    }
+    public static void task5(){
+        System.out.println("Задание 5");
+        byte potPoint = 120;
+        byte whitePoint = 2;
+        byte brownPoint = 4;
+        int allClass = potPoint / (whitePoint+brownPoint);
+        int allWhitePoint = whitePoint * allClass;
+        int allBrownPoint = brownPoint * allClass;
+        System.out.println("В школе где " + allClass + " классов нужно " + allWhitePoint + " белой краски и " + allBrownPoint + " коричневой краски") ;
+    }
+    public static void task6 (){
+        System.out.println("Задание 6");
+        byte bananas = 5;
+        byte weightBananas = 80;
+        int allBananas = bananas * weightBananas;
+        short allMilk = 200;
+        int mlMilk = allMilk / 100;
+        byte weightMilk = 105;
+        int totalMilk=  mlMilk * weightMilk;
+        byte icecream = 2;
+        byte weightIcecream = 100;
+        int allIcecream = icecream * weightIcecream;
+        byte eggs = 4;
+        byte oneEggs = 70;
+        int allEggs = eggs * oneEggs;
+        int breakfast = allBananas + totalMilk + allIcecream + allEggs;
+        float breakfastToKg = allBananas + totalMilk + allIcecream + allEggs;
+        float kgBreakfast = breakfastToKg / 1000;
+        System.out.println("Общий вес завтрака составил " + breakfast + " грамм, или " + kgBreakfast + " килограмм");
+
+
+    }
+    public static void task7(){
+        System.out.println("Задание 7");
+        byte weightSportsmanKg = 7;
+        int kgToGr = weightSportsmanKg * 1000;
+        short ifOne = 250;
+        short ifTwo = 500;
+        int dayMax = kgToGr / ifOne;
+        int dayMin = kgToGr / ifTwo;
+        System.out.println("если спортсмен бедет терять по 250 грамм в день, ему потребуется " + dayMax + " дней");
+        System.out.println("если спортсмен бедет терять по 500 грамм в день, ему потребуется " + dayMin + " дней");
+        int average = (dayMax + dayMin) / 2;
+        System.out.println("в среднем спрортсмену потребуется " + average + " день, для похудения на 7 КГ");
 
     }
 
