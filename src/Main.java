@@ -112,6 +112,7 @@ public class Main {
 
     }
     public static void task8 (){
+
         System.out.println("Задание 8");
         int masha = 67760;
         int denis = 83690;
