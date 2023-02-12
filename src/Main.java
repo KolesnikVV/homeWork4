@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1 (){
         System.out.println("Задание 1");
@@ -109,6 +110,26 @@ public class Main {
         int average = (dayMax + dayMin) / 2;
         System.out.println("в среднем спрортсмену потребуется " + average + " день, для похудения на 7 КГ");
 
+    }
+    public static void task8 (){
+        System.out.println("Задание 8");
+        int masha = 67760;
+        int denis = 83690;
+        int krestina = 76230;
+        byte index = 10;
+        int indexMasha = masha / index ;
+        int growthMasha = masha + indexMasha;
+        byte eyar = 12;
+        int growthEyarMasha = indexMasha * eyar;
+        System.out.println("Маша теперь будет получать " + growthMasha + " рублей, годовой доход вырос на " + growthEyarMasha + " рублей");
+        int indexDenis = denis / index;
+        int growthDenis = denis + indexDenis;
+        int growthEyarDenis = indexDenis * eyar;
+        System.out.println("Денис теперь будет получать " + growthDenis + " рублей, годовой доход вырос на " + growthEyarDenis + " рублей");
+        int indexKrestina = krestina / index;
+        int growthKrestina = krestina + indexKrestina;
+        int growthEyarKrestina = indexKrestina * eyar;
+        System.out.println("Крестина теперь будет получать " + growthKrestina + " рублей, годовой доход вырос на " + growthEyarKrestina + " рублей");
     }
 
 }
