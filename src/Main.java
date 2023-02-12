@@ -2,6 +2,8 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
+        task4();
     }
     public static void task1 (){
         System.out.println("Задание 1");
@@ -33,6 +35,31 @@ public class Main {
         System.out.println("числа " + d +"," + e + "," + f + "," + " относится к типу переменной short");
         byte j = 67;
         System.out.println("число " + j + " относится к типу переменной byte");
+
+    }
+    public static void task3(){
+        System.out.println("задание 3");
+        byte teacherLP = 23;
+        byte teacherAS = 27;
+        byte teacherEA = 30;
+        short paper = 480;
+        int paperStudent = paper / (teacherLP + teacherAS + teacherEA);
+        System.out.println("На каждого ученика расчитано " + paperStudent + " листов бумаги");
+    }
+    public static void task4(){
+        System.out.println("Задание 4");
+        byte bottle = 16;
+        byte minetts = 2;
+        int bottleOneMinets = bottle/minetts;
+        int bottleTwentyMinets = bottleOneMinets * 20;
+        System.out.println("За 20 минут машина произвела " + bottleTwentyMinets + " штук бутылок");
+        int oneHour = bottleOneMinets * 60;
+        int oneDay = oneHour * 24;
+        System.out.println("За 1 сутки машина произвела " + oneDay + " штук бутылок");
+        int threeDay = oneDay * 3;
+        System.out.println("За 3 дня машина произвела " + threeDay + " штук бутылок");
+        int oneMounth = oneDay * 30;
+        System.out.println("За 1 месяц машина произвела " + oneMounth + " штук бутылок");
 
     }
 
